@@ -1,79 +1,105 @@
 # 📊 Marketing Campaign Analysis
 
-![Dashboard](images/dashboard_overview.jpg)
+> **Marketing Analytics | Customer Segmentation | Campaign Performance | Predictive Analytics**
+
+An end-to-end Marketing Campaign Analysis project designed to understand customer behavior, evaluate campaign performance, identify high-value customer segments, and build a predictive model to support targeted marketing decisions.
+
+---
+
+## 🖥️ Dashboard Preview
+
+![Marketing Campaign Dashboard](./Dashboard%20image.jpg)
+
+---
 
 ## 📌 Project Overview
 
-This project analyzes customer behavior and marketing campaign performance to identify:
+This project analyzes customer behavior and marketing campaign performance to answer several key business questions:
 
-- Which customer characteristics are associated with campaign response
-- Which customer segments have higher engagement and spending
-- Which marketing campaigns generate stronger response rates
-- Which purchasing channels show higher customer activity
-- Which customers have higher potential for campaign targeting
-- Which customer attributes contribute to campaign response prediction
+- Which customer characteristics are associated with campaign response?
+- Which customer segments have higher spending and engagement?
+- Which marketing campaigns generate stronger response rates?
+- Which purchasing channels show higher customer activity?
+- Which customers have the highest potential to respond to future campaigns?
+- What factors are associated with campaign response?
 
-The project combines **SQL, Python, Statistical Analysis, RFM Segmentation, Machine Learning, and Tableau** to transform raw customer data into actionable marketing insights.
+The analysis combines **SQL, Python, Statistical Testing, RFM Segmentation, Logistic Regression, and Tableau**.
 
 ---
 
-# 🎯 Business Problem
+## 🎯 Business Problem
 
-The marketing team needs to understand customer behavior and campaign performance in order to improve targeting and allocate marketing efforts more effectively.
+Marketing campaigns can generate significant costs when customers are targeted without considering their behavior, purchasing activity, and likelihood of responding.
 
-Key business questions:
+The business needs to understand:
 
-1. Who are the customers most likely to respond to campaigns?
-2. What characteristics differentiate responders from non-responders?
-3. Which campaign performs better in terms of response rate?
+1. Who is more likely to respond to marketing campaigns?
+2. Which customer segments should receive greater marketing attention?
+3. Which campaigns demonstrate stronger customer response?
 4. Which purchasing channels are most active?
-5. Which customer segments should receive different marketing strategies?
-6. Can customer response be predicted using historical customer attributes?
+5. How can customer data be used to support more targeted campaigns?
 
 ---
 
-# 🎯 Objectives
+## 🎯 Project Objectives
 
 The objectives of this analysis are to:
 
-- Clean and prepare customer data
-- Analyze customer demographics and purchasing behavior
-- Measure marketing campaign performance
-- Identify high-value customer segments
-- Perform statistical testing
-- Build RFM customer segmentation
-- Develop a Logistic Regression model for response prediction
-- Identify important predictors of campaign response
-- Generate customer-level targeting scores
-- Translate analytical findings into business recommendations
+- Analyze customer demographics and purchasing behavior.
+- Measure overall marketing campaign performance.
+- Identify customer segments based on value and engagement.
+- Perform RFM customer segmentation.
+- Test whether key customer variables differ between responders and non-responders.
+- Build a Logistic Regression model to estimate campaign response probability.
+- Identify important features associated with campaign response.
+- Generate a list of high-potential customers for targeted marketing.
+- Translate analytical findings into business recommendations.
 
 ---
 
 # 🗂️ Dataset
 
-**Source:** Kaggle – Marketing Campaign Dataset
+The dataset contains customer demographic, purchasing, campaign response, and engagement information.
 
-The dataset contains customer demographic, purchasing, campaign acceptance, and response information.
-
-### Dataset Overview
+### Dataset Summary
 
 | Metric | Value |
 |---|---:|
-| Original Records | 2,240 |
+| Initial Records | 2,240 |
 | Clean Records | 2,213 |
 | Features | 33 |
-| Response Rate | 15.05% |
+| Missing Values After Cleaning | 0 |
+| Overall Campaign Response Rate | 15.05% |
 
 ### Main Data Categories
 
-- Customer demographics
+**Customer Demographics**
+- Age
+- Education
+- Marital Status
 - Income
-- Household information
-- Product spending
-- Purchase channels
-- Website activity
-- Campaign acceptance
-- Customer response
+- Children
+
+**Purchasing Behavior**
+- Wine
+- Fruits
+- Meat Products
+- Fish Products
+- Sweet Products
+- Gold Products
+
+**Purchase Channels**
+- Web
+- Catalog
+- Store
+
+**Campaign Variables**
+- Campaign 1–5 acceptance
+- Latest campaign response
+
+**Customer Engagement**
+- Recency
+- Purchase frequency
 
 ---
 
@@ -81,13 +107,13 @@ The dataset contains customer demographic, purchasing, campaign acceptance, and 
 
 | Tool | Purpose |
 |---|---|
-| PostgreSQL | Data cleaning, transformation and SQL analysis |
+| PostgreSQL | Data cleaning, transformation, KPI analysis and SQL analysis |
 | DBeaver | SQL development and database management |
-| Python | EDA, statistics and machine learning |
+| Python | Exploratory analysis, statistics, RFM and machine learning |
 | Pandas | Data manipulation |
-| Scikit-learn | Logistic Regression |
+| Scikit-learn | Logistic Regression and model evaluation |
 | Tableau | Interactive visualization and dashboard |
-| GitHub | Project documentation and version control |
+| PowerPoint | Project presentation |
 
 ---
 
@@ -98,22 +124,26 @@ Raw Dataset
      ↓
 Data Cleaning
      ↓
-SQL Analysis
+SQL Analysis & KPI
      ↓
-KPI & Customer Analysis
+Customer Analysis
+     ↓
+Customer Segmentation
+     ↓
+Python EDA
      ↓
 Statistical Testing
      ↓
 RFM Segmentation
      ↓
-Python EDA
-     ↓
 Logistic Regression
      ↓
 Feature Importance
      ↓
-Customer Probability Scoring
+Response Probability
+     ↓
+Top Customer Targeting
      ↓
 Tableau Dashboard
      ↓
-Business Recommendations
+Business Recommendation
